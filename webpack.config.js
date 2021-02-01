@@ -33,8 +33,8 @@ module.exports = {
             test: /\.s?(a|c)ss$/,
             use: [
               'style-loader',
-              { loader: 'typings-for-css-modules-loader', options: { sourceMap: true, importLoaders: 1, modules: true, namedExport: true, camelCase: true } },
-              { loader: 'sass-loader', options: { sourceMap: true } }
+              'css-loader',
+              'sass-loader'
             ] 
          }
       ]

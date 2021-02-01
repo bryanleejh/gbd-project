@@ -2,11 +2,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import HeaderBar from './components/HeaderBar';
+import * as styles from './style.scss';
 
 const App: React.FC = () => {
   return(
-    <div>
-    My App Component
+    <div className={styles.container}>
+      My App Component
       <HeaderBar ouId={'idiot'} />
     </div>
   );

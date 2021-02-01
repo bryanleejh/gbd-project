@@ -1,5 +1,5 @@
 import * as React from 'react';
-const styles = require('./style.scss');
+import styles from './style.scss';
 
 interface HeaderBarProps {
   ouId: string;
