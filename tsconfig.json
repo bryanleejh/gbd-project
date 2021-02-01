@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "strictFunctionTypes": false,
+    "outDir": "./lib",
+    "jsx": "react",
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "noEmitHelpers": true
+  },
+  "include": [
+    "./src",
+    "./setupTests.ts"
+  ]
+}

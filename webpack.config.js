@@ -2,7 +2,7 @@ const HtmlWebPackPlugin = require( 'html-webpack-plugin' );
 const path = require( 'path' );
 module.exports = {
    context: __dirname,
-   entry: './src/index.js',
+   entry: './src/index.tsx',
    output: {
       path: path.resolve( __dirname, 'dist' ),
       filename: 'main.js',
@@ -11,6 +11,9 @@ module.exports = {
    devServer: {
       historyApiFallback: true
    },
+   resolve: {
+        extensions: ['.ts', '.tsx', '.js', '.jsx'],
+      },
    module: {
       rules: [
          {
@@ -18,14 +21,23 @@ module.exports = {
             use: 'babel-loader',
          },
          {
-            test: /\.css$/,
-            use: ['style-loader', 'css-loader'],
-         },
+            test: /\.tsx?$/,
+            use: 'ts-loader',
+            exclude: /node_modules/,
+          },
          {
             test: /\.(png|j?g|svg|gif)?$/,
             use: 'file-loader'
+         },
+         {
+            test: /\.s?(a|c)ss$/,
+            use: [
+              'style-loader',
+              { loader: 'typings-for-css-modules-loader', options: { sourceMap: true, importLoaders: 1, modules: true, namedExport: true, camelCase: true } },
+              { loader: 'sass-loader', options: { sourceMap: true } }
+            ] 
          }
-]
+      ]
    },
    plugins: [
       new HtmlWebPackPlugin({
