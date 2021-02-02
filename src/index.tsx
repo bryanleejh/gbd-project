@@ -8,7 +8,7 @@ const App: React.FC = () => {
   return(
     <div className={styles.container}>
       My App Component
-      <HeaderBar ouId={'idiot'} />
+      <HeaderBar ouId={'test'} />
     </div>
   );
 }
