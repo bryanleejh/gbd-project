@@ -21,6 +21,7 @@ export default class HeaderBar extends React.Component<HeaderBarProps> {
         <div className="container_text">
           Brain Games
         </div>
+        <div></div>
         <div className="loginContainer">
           <div className="loginColumn"> 
             <button className="loginButton">Login</button>
