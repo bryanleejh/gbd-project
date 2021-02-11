@@ -9,9 +9,19 @@ export default class HeaderBar extends React.Component<HeaderBarProps> {
   public render() {
     return (
       <div className="container">
-        <span className="container__text">
+        <div className="logo" />
+        <div className="container_text">
           Hello {this.props.name}!
-        </span>
+        </div>
+        <div className="container_text">
+          Hello {this.props.name}!
+        </div>
+        <div className="container_text">
+          Hello {this.props.name}!
+        </div>
+        <div className="container_text">
+          Hello {this.props.name}!
+        </div>
       </div>
     );
   }

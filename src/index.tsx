@@ -7,7 +7,7 @@ import "./styles/global.scss";
 
 ReactDOM.render(
   <div>
-    <HeaderBar name="Max" />
+    <HeaderBar name="TEST" />
   </div>,
   document.getElementById("app"),
 );

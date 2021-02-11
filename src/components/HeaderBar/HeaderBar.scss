@@ -1,12 +1,21 @@
 @import "../../styles/colors";
 
 .container {
-  background-color: $moccasin;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+  background-color: rgb(0, 0, 0);
   box-sizing: border-box;
   padding: 2rem;
   text-align: center;
 
-  &__text {
-    color: $dark-red;
+  &_text {
+    color: white;
   }
+}
+
+.logo {
+  background-image: url(../../assets/logo.png);
+  background-size: contain;
+  height: 50px;
+  width: 100px;
 }

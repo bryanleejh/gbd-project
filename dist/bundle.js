@@ -1,10 +1,10 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/components/Banner/Banner.tsx":
-/*!******************************************!*\
-  !*** ./src/components/Banner/Banner.tsx ***!
-  \******************************************/
+/***/ "./src/components/HeaderBar/HeaderBar.tsx":
+/*!************************************************!*\
+  !*** ./src/components/HeaderBar/HeaderBar.tsx ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -38,34 +38,42 @@ Object.defineProperty(exports, "__esModule", ({
 
 var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
-__webpack_require__(/*! ./Banner.scss */ "./src/components/Banner/Banner.scss");
+__webpack_require__(/*! ./HeaderBar.scss */ "./src/components/HeaderBar/HeaderBar.scss");
 
-var Banner = /*#__PURE__*/function (_React$Component) {
-  _inherits(Banner, _React$Component);
+var HeaderBar = /*#__PURE__*/function (_React$Component) {
+  _inherits(HeaderBar, _React$Component);
 
-  var _super = _createSuper(Banner);
+  var _super = _createSuper(HeaderBar);
 
-  function Banner() {
-    _classCallCheck(this, Banner);
+  function HeaderBar() {
+    _classCallCheck(this, HeaderBar);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(Banner, [{
+  _createClass(HeaderBar, [{
     key: "render",
     value: function render() {
       return React.createElement("div", {
-        className: "banner"
-      }, React.createElement("span", {
-        className: "banner__text"
+        className: "container"
+      }, React.createElement("div", {
+        className: "logo"
+      }), React.createElement("div", {
+        className: "container_text"
+      }, "Hello ", this.props.name, "!"), React.createElement("div", {
+        className: "container_text"
+      }, "Hello ", this.props.name, "!"), React.createElement("div", {
+        className: "container_text"
+      }, "Hello ", this.props.name, "!"), React.createElement("div", {
+        className: "container_text"
       }, "Hello ", this.props.name, "!"));
     }
   }]);
 
-  return Banner;
+  return HeaderBar;
 }(React.Component);
 
-exports.default = Banner;
+exports.default = HeaderBar;
 
 /***/ }),
 
@@ -90,20 +98,20 @@ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var ReactDOM = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 
-var Banner_1 = __webpack_require__(/*! ./components/Banner/Banner */ "./src/components/Banner/Banner.tsx");
+var HeaderBar_1 = __webpack_require__(/*! ./components/HeaderBar/HeaderBar */ "./src/components/HeaderBar/HeaderBar.tsx");
 
 __webpack_require__(/*! ./styles/global.scss */ "./src/styles/global.scss");
 
-ReactDOM.render(React.createElement("div", null, React.createElement(Banner_1.default, {
-  name: "Max"
+ReactDOM.render(React.createElement("div", null, React.createElement(HeaderBar_1.default, {
+  name: "TEST"
 })), document.getElementById("app"));
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Banner/Banner.scss":
-/*!************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Banner/Banner.scss ***!
-  \************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/HeaderBar/HeaderBar.scss":
+/*!******************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/HeaderBar/HeaderBar.scss ***!
+  \******************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -115,12 +123,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/logo.png */ "./src/assets/logo.png");
 // Imports
 
 
+
+
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(_assets_logo_png__WEBPACK_IMPORTED_MODULE_3__.default);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".banner {\n  background-color: moccasin;\n  box-sizing: border-box;\n  padding: 2rem;\n  text-align: center; }\n  .banner__text {\n    color: darkRed; }\n", "",{"version":3,"sources":["webpack://./src/components/Banner/Banner.scss","webpack://./src/styles/colors.scss"],"names":[],"mappings":"AAEA;EACE,0BCHiB;EDIjB,sBAAsB;EACtB,aAAa;EACb,kBAAkB,EAAA;EAElB;IACE,cCRc,EAAA","sourcesContent":["@import \"../../styles/colors\";\n\n.banner {\n  background-color: $moccasin;\n  box-sizing: border-box;\n  padding: 2rem;\n  text-align: center;\n\n  &__text {\n    color: $dark-red;\n  }\n}","$moccasin: moccasin;\n$dark-red: darkRed;"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".container {\n  display: grid;\n  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;\n  background-color: black;\n  box-sizing: border-box;\n  padding: 2rem;\n  text-align: center; }\n  .container_text {\n    color: white; }\n\n.logo {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-size: contain;\n  height: 50px;\n  width: 100px; }\n", "",{"version":3,"sources":["webpack://./src/components/HeaderBar/HeaderBar.scss"],"names":[],"mappings":"AAEA;EACE,aAAa;EACb,8CAA8C;EAC9C,uBAA8B;EAC9B,sBAAsB;EACtB,aAAa;EACb,kBAAkB,EAAA;EAElB;IACE,YAAY,EAAA;;AAIhB;EACE,yDAA4C;EAC5C,wBAAwB;EACxB,YAAY;EACZ,YAAY,EAAA","sourcesContent":["@import \"../../styles/colors\";\n\n.container {\n  display: grid;\n  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;\n  background-color: rgb(0, 0, 0);\n  box-sizing: border-box;\n  padding: 2rem;\n  text-align: center;\n\n  &_text {\n    color: white;\n  }\n}\n\n.logo {\n  background-image: url(../../assets/logo.png);\n  background-size: contain;\n  height: 50px;\n  width: 100px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -151,6 +165,21 @@ ___CSS_LOADER_EXPORT___.push([module.id, "html {\n  font-size: 10px; }\n\nbody {
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
+
+/***/ }),
+
+/***/ "./src/assets/logo.png":
+/*!*****************************!*\
+  !*** ./src/assets/logo.png ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "676aced603d69e5c47258a800803224c.png");
 
 /***/ }),
 
@@ -20070,6 +20099,50 @@ module.exports = function cssWithMappingToString(item) {
   }
 
   return [content].join('\n');
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    // eslint-disable-next-line no-param-reassign
+    options = {};
+  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
+
+
+  url = url && url.__esModule ? url.default : url;
+
+  if (typeof url !== 'string') {
+    return url;
+  } // If url is already wrapped in quotes, remove them
+
+
+  if (/^['"].*['"]$/.test(url)) {
+    // eslint-disable-next-line no-param-reassign
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    // eslint-disable-next-line no-param-reassign
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, '\\n'), "\"");
+  }
+
+  return url;
 };
 
 /***/ }),
@@ -51129,10 +51202,10 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ "./src/components/Banner/Banner.scss":
-/*!*******************************************!*\
-  !*** ./src/components/Banner/Banner.scss ***!
-  \*******************************************/
+/***/ "./src/components/HeaderBar/HeaderBar.scss":
+/*!*************************************************!*\
+  !*** ./src/components/HeaderBar/HeaderBar.scss ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -51142,7 +51215,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Banner_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./Banner.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Banner/Banner.scss");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_HeaderBar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./HeaderBar.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/HeaderBar/HeaderBar.scss");
 
             
 
@@ -51151,11 +51224,11 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Banner_scss__WEBPACK_IMPORTED_MODULE_1__.default, options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_HeaderBar_scss__WEBPACK_IMPORTED_MODULE_1__.default, options);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Banner_scss__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_HeaderBar_scss__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 
@@ -51265,6 +51338,26 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
