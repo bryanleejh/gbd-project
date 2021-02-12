@@ -1,0 +1,104 @@
+@media only screen and (max-width: 600px) {
+  .containerMain {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    height: min-content;
+  }
+}
+
+.containerMain {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px;
+  grid-gap: 10px;
+}
+
+.fourGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.twoGrid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.twoRows {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.playWin {
+  background-image: url(../../assets/play-win.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.elementBlocks {
+  background-image: url(../../assets/element-blocks.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.racer {
+  background-image: url(../../assets/racer.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.caesar {
+  background-image: url(../../assets/caesar.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cyberpunk {
+  background-image: url(../../assets/cyberpunk.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.liveGame {
+  background-image: url(../../assets/live-game.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bike {
+  background-image: url(../../assets/bike.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.esports {
+  background-image: url(../../assets/esports.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cleo {
+  background-image: url(../../assets/cleo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.soccer {
+  background-image: url(../../assets/soccer.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.league {
+  background-image: url(../../assets/join-league.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}

@@ -6,18 +6,18 @@ interface HeaderBarProps {
 
 export default function HeaderBar() {
   return (
-    <div className="container">
+    <div className="containerHeaderBar">
       <div className="logo" />
-      <div className="container_text">
+      <div className="containerHeaderBar_text">
         Home
       </div>
-      <div className="container_text">
+      <div className="containerHeaderBar_text">
         RPG
       </div>
-      <div className="container_text">
+      <div className="containerHeaderBar_text">
         Arcade
       </div>
-      <div className="container_text">
+      <div className="containerHeaderBar_text">
         Brain Games
       </div>
       <div></div>
