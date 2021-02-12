@@ -5,9 +5,10 @@ import * as ReactDOM from "react-dom";
 import HeaderBar from "./components/HeaderBar/HeaderBar";
 import Main from "./components/Main/Main";
 import "./styles/global.scss";
+import "./index.scss";
 
 ReactDOM.render(
-  <div>
+  <div className="appContainer">
     <HeaderBar />
     <Main />
   </div>,
