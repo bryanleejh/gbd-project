@@ -7,15 +7,15 @@ interface FooterBarProps {
 export default function FooterBar() {
   return (
     <div className="containerFooterBar">
-      <div className="logo" />
+      <div className="logoFooter" />
       <div>
-        <div>Contact Us</div>
+        <div className="columnHeaderFooter">Contact Us</div>
         <div>Help Centre</div>
         <div>The Group</div>
         <div>Affiliates</div>
       </div>
       <div>
-        <div>Information</div>
+        <div className="columnHeaderFooter">Information</div>
         <div>{'Terms & Conditions'}</div>
         <div>Payment Methods</div>
         <div>Bonus Terms</div>

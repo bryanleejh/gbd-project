@@ -1,9 +1,23 @@
 .containerFooterBar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 7fr;
+  align-content: start;
   justify-content: start;
   background-color: black;
   color: white;
   font-size: 12px;
-  padding: 10px;
+  padding: 20px;
+  grid-gap: 10px;
+}
+
+.logoFooter {
+  background-image: url(../../assets/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 100px;
+}
+
+.columnHeaderFooter {
+  font-weight: bold;
 }

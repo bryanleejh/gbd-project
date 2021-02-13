@@ -22,8 +22,12 @@ function FooterBar() {
   return React.createElement("div", {
     className: "containerFooterBar"
   }, React.createElement("div", {
-    className: "logo"
-  }), React.createElement("div", null, React.createElement("div", null, "Contact Us"), React.createElement("div", null, "Help Centre"), React.createElement("div", null, "The Group"), React.createElement("div", null, "Affiliates")), React.createElement("div", null, React.createElement("div", null, "Information"), React.createElement("div", null, 'Terms & Conditions'), React.createElement("div", null, "Payment Methods"), React.createElement("div", null, "Bonus Terms"), React.createElement("div", null, "Responsible Gaming")));
+    className: "logoFooter"
+  }), React.createElement("div", null, React.createElement("div", {
+    className: "columnHeaderFooter"
+  }, "Contact Us"), React.createElement("div", null, "Help Centre"), React.createElement("div", null, "The Group"), React.createElement("div", null, "Affiliates")), React.createElement("div", null, React.createElement("div", {
+    className: "columnHeaderFooter"
+  }, "Information"), React.createElement("div", null, 'Terms & Conditions'), React.createElement("div", null, "Payment Methods"), React.createElement("div", null, "Bonus Terms"), React.createElement("div", null, "Responsible Gaming")));
 }
 
 exports.default = FooterBar;
@@ -192,12 +196,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/logo.png */ "./src/assets/logo.png");
 // Imports
 
 
+
+
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(_assets_logo_png__WEBPACK_IMPORTED_MODULE_3__.default);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".containerFooterBar {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 7fr;\n  justify-content: start;\n  background-color: black;\n  color: white;\n  font-size: 12px;\n  padding: 10px; }\n", "",{"version":3,"sources":["webpack://./src/components/FooterBar/FooterBar.scss"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sCAAsC;EACtC,sBAAsB;EACtB,uBAAuB;EACvB,YAAY;EACZ,eAAe;EACf,aAAa,EAAA","sourcesContent":[".containerFooterBar {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 7fr;\n  justify-content: start;\n  background-color: black;\n  color: white;\n  font-size: 12px;\n  padding: 10px;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".containerFooterBar {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 7fr;\n  align-content: start;\n  justify-content: start;\n  background-color: black;\n  color: white;\n  font-size: 12px;\n  padding: 20px;\n  grid-gap: 10px; }\n\n.logoFooter {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  height: 50px;\n  width: 100px; }\n\n.columnHeaderFooter {\n  font-weight: bold; }\n", "",{"version":3,"sources":["webpack://./src/components/FooterBar/FooterBar.scss"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sCAAsC;EACtC,oBAAoB;EACpB,sBAAsB;EACtB,uBAAuB;EACvB,YAAY;EACZ,eAAe;EACf,aAAa;EACb,cAAc,EAAA;;AAGhB;EACE,yDAA4C;EAC5C,wBAAwB;EACxB,4BAA4B;EAC5B,YAAY;EACZ,YAAY,EAAA;;AAGd;EACE,iBAAiB,EAAA","sourcesContent":[".containerFooterBar {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 7fr;\n  align-content: start;\n  justify-content: start;\n  background-color: black;\n  color: white;\n  font-size: 12px;\n  padding: 20px;\n  grid-gap: 10px;\n}\n\n.logoFooter {\n  background-image: url(../../assets/logo.png);\n  background-size: contain;\n  background-repeat: no-repeat;\n  height: 50px;\n  width: 100px;\n}\n\n.columnHeaderFooter {\n  font-weight: bold;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
