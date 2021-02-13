@@ -1,6 +1,35 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/components/FooterBar/FooterBar.tsx":
+/*!************************************************!*\
+  !*** ./src/components/FooterBar/FooterBar.tsx ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+__webpack_require__(/*! ./FooterBar.scss */ "./src/components/FooterBar/FooterBar.scss");
+
+function FooterBar() {
+  return React.createElement("div", {
+    className: "containerFooterBar"
+  }, React.createElement("div", {
+    className: "logo"
+  }), React.createElement("div", null, React.createElement("div", null, "Contact Us"), React.createElement("div", null, "Help Centre"), React.createElement("div", null, "The Group"), React.createElement("div", null, "Affiliates")), React.createElement("div", null, React.createElement("div", null, "Information"), React.createElement("div", null, 'Terms & Conditions'), React.createElement("div", null, "Payment Methods"), React.createElement("div", null, "Bonus Terms"), React.createElement("div", null, "Responsible Gaming")));
+}
+
+exports.default = FooterBar;
+
+/***/ }),
+
 /***/ "./src/components/HeaderBar/HeaderBar.tsx":
 /*!************************************************!*\
   !*** ./src/components/HeaderBar/HeaderBar.tsx ***!
@@ -136,13 +165,42 @@ var HeaderBar_1 = __webpack_require__(/*! ./components/HeaderBar/HeaderBar */ ".
 
 var Main_1 = __webpack_require__(/*! ./components/Main/Main */ "./src/components/Main/Main.tsx");
 
+var FooterBar_1 = __webpack_require__(/*! ./components/FooterBar/FooterBar */ "./src/components/FooterBar/FooterBar.tsx");
+
 __webpack_require__(/*! ./styles/global.scss */ "./src/styles/global.scss");
 
 __webpack_require__(/*! ./index.scss */ "./src/index.scss");
 
 ReactDOM.render(React.createElement("div", {
   className: "appContainer"
-}, React.createElement(HeaderBar_1.default, null), React.createElement(Main_1.default, null)), document.getElementById("app"));
+}, React.createElement(HeaderBar_1.default, null), React.createElement(Main_1.default, null), React.createElement(FooterBar_1.default, null)), document.getElementById("app"));
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/FooterBar/FooterBar.scss":
+/*!******************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/FooterBar/FooterBar.scss ***!
+  \******************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".containerFooterBar {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 7fr;\n  justify-content: start;\n  background-color: black;\n  color: white;\n  font-size: 12px;\n  padding: 10px; }\n", "",{"version":3,"sources":["webpack://./src/components/FooterBar/FooterBar.scss"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sCAAsC;EACtC,sBAAsB;EACtB,uBAAuB;EACvB,YAAY;EACZ,eAAe;EACf,aAAa,EAAA","sourcesContent":[".containerFooterBar {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 7fr;\n  justify-content: start;\n  background-color: black;\n  color: white;\n  font-size: 12px;\n  padding: 10px;\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
 
 /***/ }),
 
@@ -51492,6 +51550,36 @@ module.exports = function (list, options) {
     lastIdentifiers = newLastIdentifiers;
   };
 };
+
+/***/ }),
+
+/***/ "./src/components/FooterBar/FooterBar.scss":
+/*!*************************************************!*\
+  !*** ./src/components/FooterBar/FooterBar.scss ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_FooterBar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./FooterBar.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/FooterBar/FooterBar.scss");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_FooterBar_scss__WEBPACK_IMPORTED_MODULE_1__.default, options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_FooterBar_scss__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 

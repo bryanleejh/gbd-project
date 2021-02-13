@@ -1,0 +1,9 @@
+.containerFooterBar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 7fr;
+  justify-content: start;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+}
