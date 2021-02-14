@@ -20,6 +20,11 @@
   }
 }
 
+.linksHeaderBar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
 .logo {
   background-image: url(../../assets/logo.png);
   background-size: contain;
