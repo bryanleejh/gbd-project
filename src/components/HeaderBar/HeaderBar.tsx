@@ -9,21 +9,19 @@ export default function HeaderBar() {
     <div className="containerHeaderBar">
       <div className="logo" />
       <div className="linksHeaderBar">
-        <div className="containerHeaderBar_text">
+        <div className="linksHeaderBar_text">
           Home
       </div>
-        <div className="containerHeaderBar_text">
+        <div className="linksHeaderBar_text">
           RPG
       </div>
-        <div className="containerHeaderBar_text">
+        <div className="linksHeaderBar_text">
           Arcade
       </div>
-        <div className="containerHeaderBar_text">
+        <div className="linksHeaderBar_text">
           Brain Games
       </div>
       </div>
-      
-      <div></div>
       <div className="loginContainer">
         <div className="loginColumn"> 
           <button className="loginButton">Login</button>
