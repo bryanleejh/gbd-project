@@ -100,4 +100,11 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
   }
+
+  .playWin {
+    background-image: url(../../assets/play-win.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 250px;
+  }
 }

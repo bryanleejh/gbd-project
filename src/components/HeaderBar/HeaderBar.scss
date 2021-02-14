@@ -75,10 +75,10 @@
     display: grid;
     grid-template-columns: 100px 50px;
     justify-content: space-between;
-
+    width: 100vw;
   }
 
   .linksHeaderBar, .loginContainer {
-    visibility: hidden;
+    display: none;
   }
 }
