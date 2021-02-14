@@ -32,6 +32,7 @@ export default function HeaderBar() {
           <div className="loginText">Contact Us</div>
         </div>
       </div>
+      <div className="burgerMenu" />
     </div>
   );
 }
