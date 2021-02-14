@@ -1,11 +1,3 @@
-@media only screen and (max-width: 600px) {
-  .containerMain {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-  }
-}
-
 .containerMain {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -100,4 +92,12 @@
   background-image: url(../../assets/join-league.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+  .containerMain {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
 }

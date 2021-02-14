@@ -1,18 +1,5 @@
 @import "../../styles/colors";
 
-@media only screen and (max-width: 600px) {
-  .containerHeaderBar {
-    display: grid;
-    grid-template-columns: 100px 50px;
-    justify-content: space-between;
-
-  }
-
-  .linksHeaderBar, .loginContainer {
-    visibility: hidden;
-  }
-}
-
 .containerHeaderBar {
   display: grid;
   grid-template-columns: 1fr 4fr 2fr;
@@ -80,5 +67,18 @@
 
   &:hover {
     border-bottom: 4px red solid;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .containerHeaderBar {
+    display: grid;
+    grid-template-columns: 100px 50px;
+    justify-content: space-between;
+
+  }
+
+  .linksHeaderBar, .loginContainer {
+    visibility: hidden;
   }
 }
