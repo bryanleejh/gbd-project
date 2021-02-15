@@ -10,13 +10,14 @@ import {
   closeMenu,
 } from "../../redux/Menu/Menu.actions"
 import { MenuState } from "../../redux/Menu/Menu.types"
+import { Dispatch } from "redux";
 
 function App(props: any) {
   return (
     <div className="appContainer">
-      {props.menu.open ? (<MobileMenu onClickCross={() => props.closeMenu} />) : (
+      {props.open ? (<MobileMenu onClickCross={props.closeMenu} />) : (
         <>
-          <HeaderBar onClickBurger={() => props.openMenu} />
+          <HeaderBar onClickBurger={props.openMenu} />
           <Main />
           <FooterBar />
         </>
@@ -31,7 +32,7 @@ const mapStateToProps = (state: MenuState) => {
   }
 }
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch: Dispatch) => {
   return {
     openMenu: () => dispatch(openMenu()),
     closeMenu: () => dispatch(closeMenu()),

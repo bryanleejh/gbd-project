@@ -8,12 +8,12 @@ const reducer = (state = INITIAL_STATE, action: any): MenuState => {
   switch (action.type) {
     case OPEN:
       return {
-        ...state, open: state.open!,
+        ...state, open: !state.open,
       };
 
     case CLOSE:
       return {
-        ...state, open: state.open!,
+        ...state, open: !state.open,
       };
 
     default: return state;

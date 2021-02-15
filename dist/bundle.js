@@ -33,14 +33,10 @@ var Menu_actions_1 = __webpack_require__(/*! ../../redux/Menu/Menu.actions */ ".
 function App(props) {
   return React.createElement("div", {
     className: "appContainer"
-  }, props.menu.open ? React.createElement(MobileMenu_1.default, {
-    onClickCross: function onClickCross() {
-      return props.closeMenu;
-    }
+  }, props.open ? React.createElement(MobileMenu_1.default, {
+    onClickCross: props.closeMenu
   }) : React.createElement(React.Fragment, null, React.createElement(HeaderBar_1.default, {
-    onClickBurger: function onClickBurger() {
-      return props.openMenu;
-    }
+    onClickBurger: props.openMenu
   }), React.createElement(Main_1.default, null), React.createElement(FooterBar_1.default, null)));
 }
 
@@ -319,6 +315,7 @@ exports.closeMenu = exports.openMenu = void 0;
 var Menu_types_1 = __webpack_require__(/*! ./Menu.types */ "./src/redux/Menu/Menu.types.tsx");
 
 var openMenu = function openMenu() {
+  console.log('open');
   return {
     type: Menu_types_1.OPEN
   };
@@ -327,6 +324,7 @@ var openMenu = function openMenu() {
 exports.openMenu = openMenu;
 
 var closeMenu = function closeMenu() {
+  console.log('close');
   return {
     type: Menu_types_1.CLOSE
   };
@@ -362,12 +360,12 @@ var reducer = function reducer() {
   switch (action.type) {
     case Menu_types_1.OPEN:
       return Object.assign(Object.assign({}, state), {
-        open: state.open
+        open: !state.open
       });
 
     case Menu_types_1.CLOSE:
       return Object.assign(Object.assign({}, state), {
-        open: state.open
+        open: !state.open
       });
 
     default:
@@ -417,6 +415,7 @@ var Menu_reducer_1 = __webpack_require__(/*! ./Menu/Menu.reducer */ "./src/redux
 var rootReducer = redux_1.combineReducers({
   menu: Menu_reducer_1.default
 });
+exports.default = rootReducer;
 
 /***/ }),
 
@@ -435,9 +434,11 @@ Object.defineProperty(exports, "__esModule", ({
 
 var redux_1 = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 
+var redux_devtools_extension_1 = __webpack_require__(/*! redux-devtools-extension */ "./node_modules/redux-devtools-extension/index.js");
+
 var rootReducer_1 = __webpack_require__(/*! ./rootReducer */ "./src/redux/rootReducer.tsx");
 
-var store = redux_1.createStore(rootReducer_1.default);
+var store = redux_1.createStore(rootReducer_1.default, redux_devtools_extension_1.composeWithDevTools());
 exports.default = store;
 
 /***/ }),
@@ -52427,6 +52428,37 @@ exports.version = ReactVersion;
 if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/react.development.js */ "./node_modules/react/cjs/react.development.js");
 }
+
+
+/***/ }),
+
+/***/ "./node_modules/redux-devtools-extension/index.js":
+/*!********************************************************!*\
+  !*** ./node_modules/redux-devtools-extension/index.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var compose = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js").compose;
+
+exports.__esModule = true;
+exports.composeWithDevTools = (
+  typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ :
+    function() {
+      if (arguments.length === 0) return undefined;
+      if (typeof arguments[0] === 'object') return compose;
+      return compose.apply(null, arguments);
+    }
+);
+
+exports.devToolsEnhancer = (
+  typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION__ ?
+    window.__REDUX_DEVTOOLS_EXTENSION__ :
+    function() { return function(noop) { return noop; } }
+);
 
 
 /***/ }),
