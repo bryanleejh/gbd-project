@@ -7,7 +7,7 @@ interface MobileMenuProps {
 
 export default function MobileMenu(MobileMenuProps: MobileMenuProps) {
   return (
-    <div className={ MobileMenuProps.isVisible ? "containerMobileMenu" : "containerMobileMenuHidden"}>
+    <div className={MobileMenuProps.isVisible ? "containerMobileMenu" : "containerMobileMenu"}>
       <div className="crossContainer">
         <div className="logo"/>
         <div className="cross"/>
