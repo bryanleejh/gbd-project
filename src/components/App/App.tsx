@@ -10,10 +10,13 @@ export default function App() {
 
   return (
     <div className="appContainer">
-      {menuVisible ? (<MobileMenu />) : null}
-      <HeaderBar />
-      <Main />
-      <FooterBar />
+      {menuVisible ? (<MobileMenu onClickCross={() => setMenuVisible(false)} />) : (
+        <>
+          <HeaderBar onClickBurger={() => setMenuVisible(true)} />
+          <Main />
+          <FooterBar />
+        </>
+      )}
     </div>
   );
 }

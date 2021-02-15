@@ -46,7 +46,15 @@ function App() {
 
   return React.createElement("div", {
     className: "appContainer"
-  }, menuVisible ? React.createElement(MobileMenu_1.default, null) : null, React.createElement(HeaderBar_1.default, null), React.createElement(Main_1.default, null), React.createElement(FooterBar_1.default, null));
+  }, menuVisible ? React.createElement(MobileMenu_1.default, {
+    onClickCross: function onClickCross() {
+      return setMenuVisible(false);
+    }
+  }) : React.createElement(React.Fragment, null, React.createElement(HeaderBar_1.default, {
+    onClickBurger: function onClickBurger() {
+      return setMenuVisible(true);
+    }
+  }), React.createElement(Main_1.default, null), React.createElement(FooterBar_1.default, null)));
 }
 
 exports.default = App;
@@ -103,7 +111,7 @@ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 __webpack_require__(/*! ./HeaderBar.scss */ "./src/components/HeaderBar/HeaderBar.scss");
 
-function HeaderBar() {
+function HeaderBar(HeaderBarProps) {
   return React.createElement("div", {
     className: "containerHeaderBar"
   }, React.createElement("div", {
@@ -133,6 +141,7 @@ function HeaderBar() {
   }, "Sign Up"), React.createElement("div", {
     className: "loginText"
   }, "Contact Us"))), React.createElement("div", {
+    onClick: HeaderBarProps.onClickBurger,
     className: "burgerMenu"
   }));
 }
@@ -225,6 +234,7 @@ function MobileMenu(MobileMenuProps) {
   }, React.createElement("div", {
     className: "logo"
   }), React.createElement("div", {
+    onClick: MobileMenuProps.onClickCross,
     className: "cross"
   })), React.createElement("div", {
     className: "buttonsContainer"

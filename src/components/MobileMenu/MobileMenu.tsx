@@ -2,6 +2,7 @@ import * as React from "react";
 import "./MobileMenu.scss";
 
 interface MobileMenuProps {
+  onClickCross: () => void;
 }
 
 export default function MobileMenu(MobileMenuProps: MobileMenuProps) {
@@ -9,7 +10,7 @@ export default function MobileMenu(MobileMenuProps: MobileMenuProps) {
     <div className="containerMobileMenu">
       <div className="crossContainer">
         <div className="logo"/>
-        <div className="cross"/>
+        <div onClick={MobileMenuProps.onClickCross} className="cross"/>
       </div>
       <div className="buttonsContainer">
         <button className="loginButton">Login</button>

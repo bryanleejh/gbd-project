@@ -2,9 +2,10 @@ import * as React from "react";
 import "./HeaderBar.scss";
 
 interface HeaderBarProps {
+  onClickBurger: () => void;
 }
 
-export default function HeaderBar() {
+export default function HeaderBar(HeaderBarProps: HeaderBarProps) {
   return (
     <div className="containerHeaderBar">
       <div className="logo" />
@@ -32,7 +33,7 @@ export default function HeaderBar() {
           <div className="loginText">Contact Us</div>
         </div>
       </div>
-      <div className="burgerMenu" />
+      <div onClick={HeaderBarProps.onClickBurger} className="burgerMenu" />
     </div>
   );
 }
