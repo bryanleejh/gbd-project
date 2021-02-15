@@ -27,8 +27,9 @@ function App(props: any) {
 }
 
 const mapStateToProps = (state: MenuState) => {
+  console.log('mapStateToProps', state);
   return {
-    open: state.open,
+    open: state.menu.open,
   }
 }
 

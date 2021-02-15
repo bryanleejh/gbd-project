@@ -41,8 +41,9 @@ function App(props) {
 }
 
 var mapStateToProps = function mapStateToProps(state) {
+  console.log('mapStateToProps', state);
   return {
-    open: state.open
+    open: state.menu.open
   };
 };
 
