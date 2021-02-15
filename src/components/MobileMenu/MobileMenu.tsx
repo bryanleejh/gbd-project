@@ -2,12 +2,11 @@ import * as React from "react";
 import "./MobileMenu.scss";
 
 interface MobileMenuProps {
-  isVisible: boolean;
 }
 
 export default function MobileMenu(MobileMenuProps: MobileMenuProps) {
   return (
-    <div className={MobileMenuProps.isVisible ? "containerMobileMenu" : "containerMobileMenu"}>
+    <div className="containerMobileMenu">
       <div className="crossContainer">
         <div className="logo"/>
         <div className="cross"/>
