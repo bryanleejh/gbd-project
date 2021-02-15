@@ -9,8 +9,13 @@ import {
   openMenu,
   closeMenu,
 } from "../../redux/Menu/Menu.actions"
-import { MenuState } from "../../redux/Menu/Menu.types"
 import { Dispatch } from "redux";
+
+interface State {
+  menu: {
+    open: boolean
+  }
+}
 
 function App(props: any) {
   return (
@@ -26,7 +31,7 @@ function App(props: any) {
   );
 }
 
-const mapStateToProps = (state: MenuState) => {
+const mapStateToProps = (state: State) => {
   console.log('mapStateToProps', state);
   return {
     open: state.menu.open,
