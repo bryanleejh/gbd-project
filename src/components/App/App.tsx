@@ -4,15 +4,19 @@ import MobileMenu from "../../components/MobileMenu/MobileMenu";
 import HeaderBar from "../../components/HeaderBar/HeaderBar";
 import Main from "../../components/Main/Main";
 import FooterBar from "../../components/FooterBar/FooterBar";
+import { connect } from "react-redux";
+import {
+  openMenu,
+  closeMenu,
+} from "../../redux/Menu/Menu.actions"
+import { MenuState } from "../../redux/Menu/Menu.types"
 
-export default function App() {
-  const [menuVisible, setMenuVisible] = React.useState(false);
-
+function App(props: any) {
   return (
     <div className="appContainer">
-      {menuVisible ? (<MobileMenu onClickCross={() => setMenuVisible(false)} />) : (
+      {props.menu.open ? (<MobileMenu onClickCross={() => props.closeMenu} />) : (
         <>
-          <HeaderBar onClickBurger={() => setMenuVisible(true)} />
+          <HeaderBar onClickBurger={() => props.openMenu} />
           <Main />
           <FooterBar />
         </>
@@ -20,3 +24,18 @@ export default function App() {
     </div>
   );
 }
+
+const mapStateToProps = (state: MenuState) => {
+  return {
+    open: state.open,
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    openMenu: () => dispatch(openMenu()),
+    closeMenu: () => dispatch(closeMenu()),
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)
