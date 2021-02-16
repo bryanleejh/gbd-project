@@ -49,7 +49,7 @@
     "webpack:dev": "npx webpack --config webpack.config.js",
     "dev": "webpack serve --mode=development",
     "prod": "webpack serve --mode=production",
-    "test": "jest --config ./jest.config.json",
+    "test": "jest --config ./jest.config.js",
     "test:watch": "yarn run test -- --watch"
   }
 }
