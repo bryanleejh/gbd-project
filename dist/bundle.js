@@ -14,21 +14,21 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+const MobileMenu_1 = __webpack_require__(/*! ../../components/MobileMenu/MobileMenu */ "./src/components/MobileMenu/MobileMenu.tsx");
+
+const HeaderBar_1 = __webpack_require__(/*! ../../components/HeaderBar/HeaderBar */ "./src/components/HeaderBar/HeaderBar.tsx");
+
+const Main_1 = __webpack_require__(/*! ../../components/Main/Main */ "./src/components/Main/Main.tsx");
+
+const FooterBar_1 = __webpack_require__(/*! ../../components/FooterBar/FooterBar */ "./src/components/FooterBar/FooterBar.tsx");
+
+const react_redux_1 = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+
+const Menu_actions_1 = __webpack_require__(/*! ../../redux/Menu/Menu.actions */ "./src/redux/Menu/Menu.actions.tsx");
 
 __webpack_require__(/*! ./App.scss */ "./src/components/App/App.scss");
-
-var MobileMenu_1 = __webpack_require__(/*! ../../components/MobileMenu/MobileMenu */ "./src/components/MobileMenu/MobileMenu.tsx");
-
-var HeaderBar_1 = __webpack_require__(/*! ../../components/HeaderBar/HeaderBar */ "./src/components/HeaderBar/HeaderBar.tsx");
-
-var Main_1 = __webpack_require__(/*! ../../components/Main/Main */ "./src/components/Main/Main.tsx");
-
-var FooterBar_1 = __webpack_require__(/*! ../../components/FooterBar/FooterBar */ "./src/components/FooterBar/FooterBar.tsx");
-
-var react_redux_1 = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-
-var Menu_actions_1 = __webpack_require__(/*! ../../redux/Menu/Menu.actions */ "./src/redux/Menu/Menu.actions.tsx");
 
 function App(props) {
   return React.createElement("div", {
@@ -40,21 +40,17 @@ function App(props) {
   }), React.createElement(Main_1.default, null), React.createElement(FooterBar_1.default, null)));
 }
 
-var mapStateToProps = function mapStateToProps(state) {
+const mapStateToProps = state => {
   console.log('mapStateToProps', state);
   return {
     open: state.menu.open
   };
 };
 
-var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+const mapDispatchToProps = dispatch => {
   return {
-    openMenu: function openMenu() {
-      return dispatch(Menu_actions_1.openMenu());
-    },
-    closeMenu: function closeMenu() {
-      return dispatch(Menu_actions_1.closeMenu());
-    }
+    openMenu: () => dispatch(Menu_actions_1.openMenu()),
+    closeMenu: () => dispatch(Menu_actions_1.closeMenu())
   };
 };
 
@@ -75,7 +71,7 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 __webpack_require__(/*! ./FooterBar.scss */ "./src/components/FooterBar/FooterBar.scss");
 
@@ -108,7 +104,7 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 __webpack_require__(/*! ./HeaderBar.scss */ "./src/components/HeaderBar/HeaderBar.scss");
 
@@ -164,7 +160,7 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 __webpack_require__(/*! ./Main.scss */ "./src/components/Main/Main.scss");
 
@@ -223,7 +219,7 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 __webpack_require__(/*! ./MobileMenu.scss */ "./src/components/MobileMenu/MobileMenu.scss");
 
@@ -279,19 +275,19 @@ __webpack_require__(/*! core-js */ "./node_modules/core-js/index.js");
 
 __webpack_require__(/*! regenerator-runtime/runtime */ "./node_modules/regenerator-runtime/runtime.js");
 
-var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
-var ReactDOM = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+const ReactDOM = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 
-var App_1 = __webpack_require__(/*! ./components/App/App */ "./src/components/App/App.tsx");
+const App_1 = __webpack_require__(/*! ./components/App/App */ "./src/components/App/App.tsx");
 
 __webpack_require__(/*! ./styles/global.scss */ "./src/styles/global.scss");
 
 __webpack_require__(/*! ./index.scss */ "./src/index.scss");
 
-var react_redux_1 = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+const react_redux_1 = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 
-var store_1 = __webpack_require__(/*! ./redux/store */ "./src/redux/store.tsx");
+const store_1 = __webpack_require__(/*! ./redux/store */ "./src/redux/store.tsx");
 
 ReactDOM.render(React.createElement(react_redux_1.Provider, {
   store: store_1.default
@@ -313,9 +309,9 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.closeMenu = exports.openMenu = void 0;
 
-var Menu_types_1 = __webpack_require__(/*! ./Menu.types */ "./src/redux/Menu/Menu.types.tsx");
+const Menu_types_1 = __webpack_require__(/*! ./Menu.types */ "./src/redux/Menu/Menu.types.tsx");
 
-var openMenu = function openMenu() {
+const openMenu = () => {
   console.log('open');
   return {
     type: Menu_types_1.OPEN
@@ -324,7 +320,7 @@ var openMenu = function openMenu() {
 
 exports.openMenu = openMenu;
 
-var closeMenu = function closeMenu() {
+const closeMenu = () => {
   console.log('close');
   return {
     type: Menu_types_1.CLOSE
@@ -348,16 +344,13 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var Menu_types_1 = __webpack_require__(/*! ./Menu.types */ "./src/redux/Menu/Menu.types.tsx");
+const Menu_types_1 = __webpack_require__(/*! ./Menu.types */ "./src/redux/Menu/Menu.types.tsx");
 
-var INITIAL_STATE = {
+const INITIAL_STATE = {
   open: false
 };
 
-var reducer = function reducer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : INITIAL_STATE;
-  var action = arguments.length > 1 ? arguments[1] : undefined;
-
+const reducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case Menu_types_1.OPEN:
       return Object.assign(Object.assign({}, state), {
@@ -409,11 +402,11 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var redux_1 = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+const redux_1 = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 
-var Menu_reducer_1 = __webpack_require__(/*! ./Menu/Menu.reducer */ "./src/redux/Menu/Menu.reducer.tsx");
+const Menu_reducer_1 = __webpack_require__(/*! ./Menu/Menu.reducer */ "./src/redux/Menu/Menu.reducer.tsx");
 
-var rootReducer = redux_1.combineReducers({
+const rootReducer = redux_1.combineReducers({
   menu: Menu_reducer_1.default
 });
 exports.default = rootReducer;
@@ -433,13 +426,13 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var redux_1 = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+const redux_1 = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 
-var redux_devtools_extension_1 = __webpack_require__(/*! redux-devtools-extension */ "./node_modules/redux-devtools-extension/index.js");
+const redux_devtools_extension_1 = __webpack_require__(/*! redux-devtools-extension */ "./node_modules/redux-devtools-extension/index.js");
 
-var rootReducer_1 = __webpack_require__(/*! ./rootReducer */ "./src/redux/rootReducer.tsx");
+const rootReducer_1 = __webpack_require__(/*! ./rootReducer */ "./src/redux/rootReducer.tsx");
 
-var store = redux_1.createStore(rootReducer_1.default, redux_devtools_extension_1.composeWithDevTools());
+const store = redux_1.createStore(rootReducer_1.default, redux_devtools_extension_1.composeWithDevTools());
 exports.default = store;
 
 /***/ }),

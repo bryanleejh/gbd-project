@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./App.scss";
 import MobileMenu from "../../components/MobileMenu/MobileMenu";
 import HeaderBar from "../../components/HeaderBar/HeaderBar";
 import Main from "../../components/Main/Main";
@@ -10,6 +9,7 @@ import {
   closeMenu,
 } from "../../redux/Menu/Menu.actions"
 import { Dispatch } from "redux";
+import "./App.scss";
 
 interface State {
   menu: {

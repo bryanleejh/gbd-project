@@ -1,4 +1,4 @@
-// src/App.test.js
+// src/App.spec.tsx
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import * as renderer from 'react-test-renderer';
